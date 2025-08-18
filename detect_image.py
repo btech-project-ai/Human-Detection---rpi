@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 import cv2
 
-def detect_image(image_path, model_path=r"D:\Final Year Project\Human-Detection\runs\detect\human_detection_yolov8n\weights\best.pt", save_output=True):
+def detect_image(image_path, model_path=r"best.pt", save_output=True):
     """
     Detect objects in a single image using a trained YOLO model.
     
@@ -32,5 +32,5 @@ def detect_image(image_path, model_path=r"D:\Final Year Project\Human-Detection\
 
 if __name__ == "__main__":
     # Example usage
-    image_path = r"D:\Final Year Project\Human-Detection\big.webp"  # put your test image here
+    image_path = r"flood_image0413_1.png"  # put your test image here
     detect_image(image_path)
